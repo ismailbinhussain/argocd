@@ -5,7 +5,7 @@ metadata:
     app: train
   name: train-deploy
 spec:
-  replicas: 6
+  replicas: 20
   selector:
     matchLabels:
       app: train
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: cont1
-        image: siraj321/paytmrecharge:latest
+        image: siraj321/paytmtrain:latest
         ports:
           - containerPort: 80
 ---
